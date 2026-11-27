@@ -1,37 +1,18 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ひだまりねこ / Sunny Spot Cat — サポート / Support</title><style>
-:root{color-scheme:light dark;--bg:#fffdf9;--fg:#2e2a28;--muted:#6f6762;--line:#e8e1d8;--accent:#e9a35e}
-@media (prefers-color-scheme:dark){:root{--bg:#1f1d1c;--fg:#f1ece6;--muted:#b4aaa2;--line:#3a3633}}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Segoe UI",sans-serif}
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sunny Spot Cat / ひだまりねこ</title><style>
+:root{color-scheme:light dark;--bg:#fffdf9;--fg:#2e2a28;--muted:#6f6762;--line:#e8e1d8;--accent:#c8762a}
+@media (prefers-color-scheme:dark){:root{--bg:#1f1d1c;--fg:#f1ece6;--muted:#b4aaa2;--line:#3a3633;--accent:#f0b070}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Segoe UI","Noto Sans",sans-serif}
 main{max-width:720px;margin:0 auto;padding:40px 16px 64px}
-h1{font-size:1.6rem;margin:0 0 4px} h2{font-size:1.2rem;margin:36px 0 8px;border-top:1px solid var(--line);padding-top:24px}
-.muted{color:var(--muted);font-size:.9rem} a{color:var(--accent)} ul{padding-left:1.2em}
+h1{font-size:1.6rem;margin:0 0 4px}h2{font-size:1.2rem;margin:36px 0 8px;border-top:1px solid var(--line);padding-top:24px}
+.muted{color:var(--muted);font-size:.9rem}a{color:var(--accent)}ul{padding-left:1.2em}
 nav{margin-bottom:24px;font-size:.95rem}
-</style></head>
+.langs{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.9rem;margin:0;padding:0;list-style:none}
+details{margin-top:40px}summary{cursor:pointer;color:var(--muted)}
+.hero{display:block;width:100%;max-width:420px;height:auto;border-radius:18px;margin:18px 0 8px}
+.faq{list-style:none;padding:0}.faq li{margin:0 0 22px}.faq img{display:block;width:100%;max-width:360px;height:auto;margin:8px 0 0}
+</style><script>(function(){var c=["en", "ja"];var ls=navigator.languages||[navigator.language||'en'];function m(l){l=l.toLowerCase();for(var i=0;i<c.length;i++){if(c[i].toLowerCase()===l)return c[i];}if(l.indexOf('zh')===0){return /tw|hk|mo|hant/.test(l)?'zh-Hant':'zh-Hans';}if(l.indexOf('pt')===0){return l==='pt-pt'?'pt-PT':'pt-BR';}if(l==='es'||l==='es-es')return 'es';if(l.indexOf('es-')===0)return 'es-419';if(l==='fr-ca')return 'fr-CA';if(l==='no'||l.indexOf('nn')===0)return 'nb';var b=l.split('-')[0];for(var j=0;j<c.length;j++){if(c[j].toLowerCase()===b)return c[j];}return null;}var t='en';for(var k=0;k<ls.length;k++){var r=m(ls[k]);if(r){t=r;break;}}location.replace(t+'/');})();</script></head>
 <body><main>
-<h1>ひだまりねこ <span class="muted">/ Sunny Spot Cat</span></h1>
-<p>ウィンドウの上で、小さなねこが暮らすアプリです（Mac・Windows）。<br>A little cat that lives on top of your windows (Mac and Windows).</p>
-
-<h2>よくある質問</h2>
-<ul>
-<li><strong>メニューはどこ？</strong> Mac はメニューバーの肉球、Windows は通知領域の肉球（見えないときは「^」の中）か、ねこの右クリックです。</li>
-<li><strong>使い方を知りたい</strong> メニューの「使い方をためす」で、操作を 1 つずつ案内します。</li>
-<li><strong>ねこが見えない</strong> メニューの「ウィンドウの上で遊ぶ」に印があるかを見てください。ウィンドウがないときは、Dock・タスクバーの上にいます。</li>
-<li><strong>データは集めていますか？</strong> 集めていません。すべて端末の中だけで動きます（<a href="privacy">プライバシーポリシー</a>）。</li>
-<li><strong>お金はかかりますか？</strong> すべての機能が無料です。「応援する」は任意です。</li>
-</ul>
-
-<h2>FAQ</h2>
-<ul>
-<li><strong>Where is the menu?</strong> On Mac, click the paw in the menu bar. On Windows, click the paw in the notification area (inside “^” if hidden) or right-click the cat.</li>
-<li><strong>How do I use it?</strong> Choose “Try the Tutorial” in the menu for a step-by-step guide.</li>
-<li><strong>I can’t see the cat.</strong> Check that “Play on Windows” is on in the menu. With no windows open, the cat sits on the Dock or taskbar.</li>
-<li><strong>Do you collect data?</strong> No. Everything stays on your device (<a href="privacy">Privacy Policy</a>).</li>
-<li><strong>Does it cost anything?</strong> All features are free. “Support” is optional.</li>
-</ul>
-
-<h2>お問い合わせ / Contact</h2>
-<p><a href="mailto:gaiter-gunny1x@icloud.com">gaiter-gunny1x@icloud.com</a></p>
-<p class="muted">© 2026 Mitsuo Yamamoto</p>
+<h1>Sunny Spot Cat <span class="muted">/ ひだまりねこ</span></h1>
+<ul class="langs"><li><a href="en/" hreflang="en" lang="en">English</a></li><li><a href="ja/" hreflang="ja" lang="ja">日本語</a></li></ul>
 </main></body></html>
