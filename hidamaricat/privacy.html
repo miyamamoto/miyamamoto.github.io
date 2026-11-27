@@ -47,6 +47,14 @@ h2{font-size:1.45rem;line-height:1.4;margin:0 0 22px;text-align:center}
 footer{margin-top:64px;border-top:1px solid var(--line);padding:24px 0 48px;color:var(--muted);font-size:.9rem}
 footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px}
 details summary{cursor:pointer}
+.topright{display:flex;align-items:center;gap:14px}
+.langmenu{position:relative}
+.langmenu summary{list-style:none;display:flex;align-items:center;gap:6px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.9rem;background:var(--card)}
+.langmenu summary::-webkit-details-marker{display:none}
+.langmenu[open] summary{color:var(--fg)}
+.langmenu .langs{position:absolute;inset-inline-end:0;top:calc(100% + 8px);z-index:10;width:min(480px,calc(100vw - 32px));max-height:min(70vh,520px);overflow:auto;
+  margin:0;padding:14px 18px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.14)}
+@media (max-width:560px){.top a.sub{display:none}.langmenu summary span{max-width:9em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
 .langs{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:4px 16px}
 .langs a{color:var(--muted);text-decoration:none}.langs a:hover{color:var(--accent)}
 article h1{font-size:1.9rem;line-height:1.35;margin:28px 0 4px}
