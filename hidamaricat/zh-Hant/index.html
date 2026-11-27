@@ -18,9 +18,10 @@ a{color:var(--accent)}
 .hero p{font-size:1.15rem;color:var(--muted);margin:0 auto;max-width:34em}
 .shots{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:36px 0 0}
 .shots figure{margin:0}
-.shots img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.shots img{display:block;width:100%;max-width:340px;height:auto;margin:0 auto;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow)}
 .shots figcaption{text-align:center;color:var(--muted);font-size:.9rem;margin-top:10px}
-.shots .wide{grid-column:1/-1}
+.shots .wide{grid-column:1/-1}.shots .wide img{max-width:560px}
+/* 写真は、ねこと窓の上の辺だけに切り抜いてある。Windows の写真は 1 倍の画面なので、大きくしすぎない（ぼやけない） */
 .gallery{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(400px,100%),1fr));gap:16px}
 .scene{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#EEF3FA;box-shadow:var(--shadow)}
 .scene img{display:block;width:100%;height:auto}
