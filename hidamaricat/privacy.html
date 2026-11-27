@@ -22,7 +22,11 @@ a{color:var(--accent)}
 .shots img{display:block;width:100%;max-width:340px;height:auto;margin:0 auto;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow)}
 .shots figcaption{text-align:center;color:var(--muted);font-size:.9rem;margin-top:10px}
 .shots img.windows{max-width:300px}
-.shots .wide{grid-column:1/-1}.shots .wide img{max-width:560px}
+.badges{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:16px 0 0;padding:0}
+.badges li{font-size:.9rem;padding:4px 12px;border-radius:999px;background:var(--soft);color:var(--fg);border:1px solid var(--line)}
+.gather{margin:48px 0 0;text-align:center}
+.gather .scene{max-width:100%}
+.gather .scene img{aspect-ratio:1008/184}
 /* 写真は、ねこと窓の上の辺だけに切り抜いてある。Windows の写真は 1 倍の画面なので、大きくしすぎない（ぼやけない） */
 .lead{max-width:36em;margin:-8px auto 24px;text-align:center;color:var(--muted)}
 .gallery{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(400px,100%),1fr));gap:16px}

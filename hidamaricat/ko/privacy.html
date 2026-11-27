@@ -22,7 +22,11 @@ a{color:var(--accent)}
 .shots img{display:block;width:100%;max-width:340px;height:auto;margin:0 auto;border-radius:12px;border:1px solid var(--line);box-shadow:var(--shadow)}
 .shots figcaption{text-align:center;color:var(--muted);font-size:.9rem;margin-top:10px}
 .shots img.windows{max-width:300px}
-.shots .wide{grid-column:1/-1}.shots .wide img{max-width:560px}
+.badges{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:16px 0 0;padding:0}
+.badges li{font-size:.9rem;padding:4px 12px;border-radius:999px;background:var(--soft);color:var(--fg);border:1px solid var(--line)}
+.gather{margin:48px 0 0;text-align:center}
+.gather .scene{max-width:100%}
+.gather .scene img{aspect-ratio:1008/184}
 /* 写真は、ねこと窓の上の辺だけに切り抜いてある。Windows の写真は 1 倍の画面なので、大きくしすぎない（ぼやけない） */
 .lead{max-width:36em;margin:-8px auto 24px;text-align:center;color:var(--muted)}
 .gallery{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(400px,100%),1fr));gap:16px}
@@ -65,17 +69,17 @@ article ul{padding-inline-start:1.3em}
 </style></head>
 <body>
 <div class="wrap"><header class="top"><a class="brand" href="./"><img src="../media/icon.png" alt="">Sunny Spot Cat</a><div class="topright"><a class="sub" href="./">자주 묻는 질문</a><details class="langmenu"><summary aria-label="언어"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="8" cy="8" r="6.4"/><path d="M1.6 8h12.8M8 1.6c1.9 2 1.9 10.8 0 12.8M8 1.6c-1.9 2-1.9 10.8 0 12.8"/></svg><span>한국어</span></summary><ul class="langs"><li><a href="../en/privacy" hreflang="en" lang="en">English</a></li><li><a href="../ja/privacy" hreflang="ja" lang="ja">日本語</a></li><li><a href="../id/privacy" hreflang="id" lang="id">Bahasa Indonesia</a></li><li><a href="../ms/privacy" hreflang="ms" lang="ms">Bahasa Melayu</a></li><li><a href="../ca/privacy" hreflang="ca" lang="ca">Català</a></li><li><a href="../da/privacy" hreflang="da" lang="da">Dansk</a></li><li><a href="../de/privacy" hreflang="de" lang="de">Deutsch</a></li><li><a href="../es/privacy" hreflang="es" lang="es">Español</a></li><li><a href="../es-419/privacy" hreflang="es-419" lang="es-419">Español (Latinoamérica)</a></li><li><a href="../fr/privacy" hreflang="fr" lang="fr">Français</a></li><li><a href="../fr-CA/privacy" hreflang="fr-CA" lang="fr-CA">Français (Canada)</a></li><li><a href="../hr/privacy" hreflang="hr" lang="hr">Hrvatski</a></li><li><a href="../it/privacy" hreflang="it" lang="it">Italiano</a></li><li><a href="../hu/privacy" hreflang="hu" lang="hu">Magyar</a></li><li><a href="../nl/privacy" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="../nb/privacy" hreflang="nb" lang="nb">Norsk bokmål</a></li><li><a href="../pl/privacy" hreflang="pl" lang="pl">Polski</a></li><li><a href="../pt-BR/privacy" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="../pt-PT/privacy" hreflang="pt-PT" lang="pt-PT">Português (Portugal)</a></li><li><a href="../ro/privacy" hreflang="ro" lang="ro">Română</a></li><li><a href="../sk/privacy" hreflang="sk" lang="sk">Slovenčina</a></li><li><a href="../fi/privacy" hreflang="fi" lang="fi">Suomi</a></li><li><a href="../sv/privacy" hreflang="sv" lang="sv">Svenska</a></li><li><a href="../vi/privacy" hreflang="vi" lang="vi">Tiếng Việt</a></li><li><a href="../tr/privacy" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="../cs/privacy" hreflang="cs" lang="cs">Čeština</a></li><li><a href="../el/privacy" hreflang="el" lang="el">Ελληνικά</a></li><li><a href="../ru/privacy" hreflang="ru" lang="ru">Русский</a></li><li><a href="../uk/privacy" hreflang="uk" lang="uk">Українська</a></li><li><a href="../he/privacy" hreflang="he" lang="he">עברית</a></li><li><a href="../ar/privacy" hreflang="ar" lang="ar">العربية</a></li><li><a href="../hi/privacy" hreflang="hi" lang="hi">हिन्दी</a></li><li><a href="../th/privacy" hreflang="th" lang="th">ไทย</a></li><li><a href="../zh-Hans/privacy" hreflang="zh-Hans" lang="zh-Hans">中文（简体）</a></li><li><a href="../zh-Hant/privacy" hreflang="zh-Hant" lang="zh-Hant">中文（繁體）</a></li><li><a href="../ko/privacy" hreflang="ko" lang="ko">한국어</a></li></ul></details></div></header></div>
-<main class="wrap narrow"><article><h1>개인정보 처리방침</h1><p class="muted">최종 업데이트: 2026년 11월 27일</p>
+<main class="wrap narrow"><article><h1>개인정보 처리방침</h1><p class="muted">최종 업데이트: 2026년 11월 28일</p>
 <p>Sunny Spot Cat(이하 ‘앱’)은 Mitsuo Yamamoto가 제공합니다.</p>
 <h2>수집하는 정보가 없습니다</h2>
 <p>앱은 개인정보, 사용 데이터, 위치, 광고 식별자를 수집하지 않으며, 개발자나 제3자에게 아무것도 보내지 않습니다. 계정이 없으며, 분석·광고·추적 SDK도 사용하지 않습니다.</p>
 <h2>기기 안에서만 사용하는 정보</h2>
-<ul><li>CPU·메모리 사용률, 다른 앱 창의 위치와 크기(고양이가 창 위에서 놀기 위해).</li><li>메뉴 막대에 있는 다른 아이콘의 위치와 그 앱의 이름(고양이가 아이콘을 가리지 않도록).</li><li>고양이가 앉아 있는 창의 앱 이름(Mac은 번들 ID, Windows는 실행 파일 이름). 음악 앱 위에서는 음악을 듣는 등 어울리는 장면을 고르기 위해 사용합니다.</li><li>창의 내용과 창 제목은 읽지 않습니다.</li><li>선택한 털 색과 설정(기기 안의 앱 설정에만 저장합니다).</li></ul>
+<ul><li>CPU·메모리 사용률(고양이의 행동을 정하기 위해). Mac에서 메뉴 막대에 수치를 표시할 때는 네트워크 통신량·디스크 여유 공간·배터리 잔량도.</li><li>다른 앱 창의 위치와 크기(고양이가 창 위에서 놀기 위해).</li><li>Mac에서 메뉴 막대에 있는 다른 아이콘의 위치와 그 앱의 이름(고양이가 아이콘을 가리지 않도록).</li><li>고양이가 앉아 있는 창의 앱 이름(Mac은 번들 ID, Windows는 실행 파일 이름과 창 종류의 이름). 음악 앱 위에서는 음악을 듣는 등 어울리는 장면을 고르기 위해 사용합니다.</li><li>키보드나 마우스를 마지막으로 사용한 뒤 지난 시간(고양이가 낮잠 잘 때와 ‘응원하기’ 요청을 보여 드릴 때를 고르기 위해). 입력한 내용은 읽지 않습니다.</li><li>창의 내용과 창 제목은 읽지 않습니다.</li><li>선택한 털 색과 설정(기기 안의 앱 설정에만 저장합니다).</li></ul>
 <p>이 정보는 기기 밖으로 나가지 않습니다.</p>
 <h2>앱 내 구입</h2>
 <p>‘응원하기’의 구입은 Apple(App Store) 또는 Microsoft(Microsoft Store)가 처리합니다. 앱이나 개발자는 결제 정보를 받지 않습니다. 앱은 구입이 활성 상태인지만 기기 안에서 확인합니다.</p>
 <h2>사용 시간</h2>
-<p>선택 사항인 ‘응원하기’ 요청을 앱을 한동안 사용해 온 분에게만 보여 드리기 위해, 앱을 사용한 총 시간을 기기 안의 앱 설정에만 기록합니다. 어디에도 보내지 않습니다.</p>
+<p>선택 사항인 ‘응원하기’ 요청을 앱을 한동안 사용해 온 분에게만 보여 드리기 위해, 앱을 사용한 총 시간과 처음 사용한 날짜를 기기 안의 앱 설정에만 기록합니다. 어디에도 보내지 않습니다.</p>
 <h2>문의</h2>
 <p>gaiter-gunny1x@icloud.com</p>
 </article></main>
